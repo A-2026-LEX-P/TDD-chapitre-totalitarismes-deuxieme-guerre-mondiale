@@ -1,0 +1,1708 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Histoire - Totalitarismes et Seconde Guerre mondiale</title>
+
+<style>
+:root {
+  --navy: #172b45;
+  --blue: #285783;
+  --blue-light: #eaf1f8;
+  --green: #23856b;
+  --green-light: #e5f4ef;
+  --orange: #bd7135;
+  --orange-light: #fff1e5;
+  --red: #b84a4a;
+  --grey: #64748b;
+  --light: #f4f6f9;
+  --border: #dce3eb;
+  --white: #ffffff;
+  --shadow: 0 5px 20px rgba(23,43,69,.07);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--light);
+  color: #27364a;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+button, textarea, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  background: var(--navy);
+  color: white;
+  padding: 35px 20px 28px;
+  border-bottom: 5px solid #3b739d;
+}
+
+.header-inner {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.eyebrow {
+  color: #a9c8df;
+  font-size: .78rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+header p {
+  color: #d3dfeb;
+  max-width: 720px;
+  margin: 0;
+}
+
+.header-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.header-info span {
+  border: 1px solid #607991;
+  background: rgba(255,255,255,.08);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: .82rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+.nav-inner {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  gap: 8px;
+  padding: 10px 18px;
+  overflow-x: auto;
+}
+
+nav a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: .88rem;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 8px 13px;
+  border-radius: 7px;
+}
+
+nav a:hover {
+  background: var(--blue-light);
+}
+
+.progress-area {
+  max-width: 1080px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: .82rem;
+  color: var(--grey);
+  margin-bottom: 6px;
+}
+
+.progress-track {
+  background: #dce3eb;
+  height: 7px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--green);
+  border-radius: 20px;
+  transition: width .4s ease;
+}
+
+main {
+  max-width: 1080px;
+  margin: 25px auto 60px;
+  padding: 0 20px;
+}
+
+.section {
+  margin-top: 38px;
+  scroll-margin-top: 80px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.section-number {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: var(--navy);
+  color: white;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.section-heading h2 {
+  color: var(--navy);
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.section-heading p {
+  color: var(--grey);
+  margin: 4px 0 0;
+  font-size: .9rem;
+}
+
+.panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 23px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+
+.panel h3 {
+  color: var(--navy);
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #45566d;
+}
+
+.notice {
+  background: var(--blue-light);
+  border-left: 4px solid var(--blue);
+  padding: 14px 17px;
+  border-radius: 5px;
+  margin: 18px 0;
+}
+
+.notice strong {
+  color: var(--navy);
+}
+
+.small-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .73rem;
+  color: var(--grey);
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: white;
+}
+
+.btn-success {
+  background: var(--green);
+  color: white;
+}
+
+.btn-secondary {
+  background: #e9eef3;
+  color: var(--navy);
+}
+
+.btn-warning {
+  background: var(--orange);
+  color: white;
+}
+
+.btn-danger {
+  background: #f9e9e9;
+  color: var(--red);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.feedback {
+  display: none;
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-top: 14px;
+  font-size: .92rem;
+}
+
+.feedback.show {
+  display: block;
+  animation: appear .3s ease;
+}
+
+.feedback.good {
+  background: var(--green-light);
+  color: #17674f;
+  border: 1px solid #b6dfd1;
+}
+
+.feedback.bad {
+  background: var(--orange-light);
+  color: #895021;
+  border: 1px solid #f0d1b2;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.02); }
+}
+
+footer {
+  background: var(--navy);
+  color: #c8d5e2;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: .85rem;
+}
+
+footer strong {
+  color: white;
+}
+
+@media(max-width:650px) {
+  header {
+    padding: 25px 18px;
+  }
+
+  main {
+    padding: 0 13px;
+  }
+
+  .panel {
+    padding: 17px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">Histoire · Terminale STI2D</div>
+    <h1>Des totalitarismes à la Seconde Guerre mondiale</h1>
+    <p>
+      Deux activités pour comprendre les régimes totalitaires
+      de l'entre-deux-guerres et étudier la Seconde Guerre mondiale,
+      un conflit aux dimensions nouvelles.
+    </p>
+    <div class="header-info">
+      <span>📚 Activités de synthèse</span>
+      <span>🌍 1930-1945</span>
+      <span>✏️ Travail en autonomie</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#activite1">1. Totalitarismes</a>
+    <a href="#activite2">2. Guerre mondiale</a>
+    <a href="#bilan">Bilan à retenir</a>
+  </div>
+</nav>
+
+<div class="progress-area">
+  <div class="progress-label">
+    <span>Votre progression</span>
+    <strong id="progressText">0 %</strong>
+  </div>
+  <div class="progress-track">
+    <div class="progress-fill" id="progressBar"></div>
+  </div>
+</div>
+
+<main>
+
+<!-- ACTIVITÉ 1 -->
+
+<section class="section" id="activite1">
+
+  <div class="section-heading">
+    <div class="section-number">1</div>
+    <div>
+      <h2>Comprendre les régimes totalitaires</h2>
+      <p>Construire une carte mentale de synthèse</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="small-label">Objectif de travail</div>
+    <h3>Comment se caractérisent les régimes totalitaires ?</h3>
+    <p class="intro">
+      À partir de votre cours, vous allez construire une carte mentale
+      permettant de comparer les régimes de Staline en URSS et de
+      Hitler en Allemagne nazie.
+    </p>
+
+    <div class="notice">
+      <strong>Consigne :</strong> Pour chaque proposition ci-dessous,
+      choisissez la branche de la carte mentale dans laquelle elle
+      doit apparaître. Attention : certaines caractéristiques sont
+      communes aux deux régimes, tandis que d'autres permettent
+      de les distinguer.
+    </div>
+
+    <p><strong>Les trois branches de votre carte mentale :</strong></p>
+
+    <div class="mind-legend">
+      <div class="legend-item common">
+        <span class="legend-dot"></span>
+        Caractéristiques communes
+      </div>
+      <div class="legend-item ussr">
+        <span class="legend-dot"></span>
+        URSS de Staline
+      </div>
+      <div class="legend-item nazi">
+        <span class="legend-dot"></span>
+        Allemagne nazie
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="small-label">Carte mentale interactive</div>
+    <h3>Classez les caractéristiques des régimes totalitaires</h3>
+
+    <div class="mind-center">
+      LES RÉGIMES TOTALITAIRES
+      <span>URSS de Staline et Allemagne nazie</span>
+    </div>
+
+    <div class="mind-instructions">
+      Sélectionnez une catégorie pour chaque proposition.
+      Vous pouvez modifier vos choix autant de fois que nécessaire.
+    </div>
+
+    <div id="mindItems" class="mind-items">
+
+      <div class="mind-card" data-answer="common">
+        <div class="mind-card-text">
+          <span class="item-number">01</span>
+          Le culte de la personnalité du chef.
+        </div>
+        <select aria-label="Catégorie de la proposition 1">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="ussr">
+        <div class="mind-card-text">
+          <span class="item-number">02</span>
+          Une idéologie fondée sur la lutte des classes.
+        </div>
+        <select aria-label="Catégorie de la proposition 2">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="nazi">
+        <div class="mind-card-text">
+          <span class="item-number">03</span>
+          Une idéologie fondée sur le racisme et l'antisémitisme.
+        </div>
+        <select aria-label="Catégorie de la proposition 3">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="common">
+        <div class="mind-card-text">
+          <span class="item-number">04</span>
+          Une propagande omniprésente qui cherche à obtenir
+          l'adhésion de la population.
+        </div>
+        <select aria-label="Catégorie de la proposition 4">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="common">
+        <div class="mind-card-text">
+          <span class="item-number">05</span>
+          La volonté de créer un « homme nouveau ».
+        </div>
+        <select aria-label="Catégorie de la proposition 5">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="ussr">
+        <div class="mind-card-text">
+          <span class="item-number">06</span>
+          Le projet de former un citoyen collectiviste et engagé
+          dans la construction du socialisme.
+        </div>
+        <select aria-label="Catégorie de la proposition 6">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="nazi">
+        <div class="mind-card-text">
+          <span class="item-number">07</span>
+          Le projet de former un individu fidèle au Führer,
+          discipliné et préparé à la guerre.
+        </div>
+        <select aria-label="Catégorie de la proposition 7">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="common">
+        <div class="mind-card-text">
+          <span class="item-number">08</span>
+          L'encadrement de la jeunesse pour diffuser les valeurs
+          du régime dès l'enfance.
+        </div>
+        <select aria-label="Catégorie de la proposition 8">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="ussr">
+        <div class="mind-card-text">
+          <span class="item-number">09</span>
+          Le NKVD, organisme chargé de la répression.
+        </div>
+        <select aria-label="Catégorie de la proposition 9">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="nazi">
+        <div class="mind-card-text">
+          <span class="item-number">10</span>
+          Les SA, les SS et la police, instruments de la répression.
+        </div>
+        <select aria-label="Catégorie de la proposition 10">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="common">
+        <div class="mind-card-text">
+          <span class="item-number">11</span>
+          Des arrestations, des exécutions et des déportations
+          dans des camps.
+        </div>
+        <select aria-label="Catégorie de la proposition 11">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="ussr">
+        <div class="mind-card-text">
+          <span class="item-number">12</span>
+          La Grande Terreur vise principalement les ennemis
+          politiques et sociaux du régime.
+        </div>
+        <select aria-label="Catégorie de la proposition 12">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+      <div class="mind-card" data-answer="nazi">
+        <div class="mind-card-text">
+          <span class="item-number">13</span>
+          La persécution des Juifs en raison de leur appartenance
+          raciale supposée.
+        </div>
+        <select aria-label="Catégorie de la proposition 13">
+          <option value="">Choisissez une branche…</option>
+          <option value="common">Caractéristiques communes</option>
+          <option value="ussr">URSS de Staline</option>
+          <option value="nazi">Allemagne nazie</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="button-row">
+      <button class="btn btn-primary" onclick="checkMind()">
+        Vérifier ma carte mentale
+      </button>
+      <button class="btn btn-secondary" onclick="resetMind()">
+        Recommencer
+      </button>
+      <button class="btn btn-success" onclick="showMindCorrection()">
+        Voir la correction complète
+      </button>
+    </div>
+
+    <div id="mindFeedback" class="feedback"></div>
+
+    <div id="mindCorrection" hidden>
+      <div class="notice">
+        <strong>Correction de la carte mentale</strong>
+        <p>
+          Les caractéristiques communes montrent que les deux régimes
+          cherchent à contrôler et transformer la société par
+          l'idéologie, la propagande, l'encadrement et la répression.
+        </p>
+      </div>
+      <div class="correction-grid">
+        <div class="correction-branch common-branch">
+          <h4>Caractéristiques communes</h4>
+          <ul>
+            <li>Culte de la personnalité</li>
+            <li>Propagande</li>
+            <li>Homme nouveau</li>
+            <li>Encadrement de la jeunesse</li>
+            <li>Arrestations, exécutions et camps</li>
+          </ul>
+        </div>
+        <div class="correction-branch ussr-branch">
+          <h4>URSS de Staline</h4>
+          <ul>
+            <li>Lutte des classes</li>
+            <li>Citoyen collectiviste et socialiste</li>
+            <li>NKVD</li>
+            <li>Grande Terreur</li>
+            <li>Ennemis politiques et sociaux</li>
+          </ul>
+        </div>
+        <div class="correction-branch nazi-branch">
+          <h4>Allemagne nazie</h4>
+          <ul>
+            <li>Racisme et antisémitisme</li>
+            <li>Fidélité au Führer</li>
+            <li>SA, SS et police</li>
+            <li>Persécutions raciales</li>
+            <li>Juifs désignés comme ennemis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<style>
+.document-image {
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:7px;
+  margin:15px 0;
+  cursor:zoom-in;
+}
+.question-card {
+  border:1px solid var(--border);
+  border-radius:10px;
+  margin:15px 0;
+  overflow:hidden;
+}
+.question-header {
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:15px;
+  background:#f8fafc;
+}
+.question-number {
+  background:var(--navy);
+  color:white;
+  border-radius:7px;
+  min-width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  font-weight:bold;
+}
+.question-title {
+  font-weight:bold;
+  color:var(--navy);
+  flex:1;
+}
+.question-body {padding:15px;}
+.question-body textarea {
+  display:block;
+  width:100%;
+  min-height:105px;
+  resize:vertical;
+  border:1px solid #cbd5e1;
+  border-radius:8px;
+  padding:12px;
+  background:white;
+  color:#27364a;
+}
+.question-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:12px;
+}
+.answer {
+  display:none;
+  background:var(--green-light);
+  border-top:1px solid #b6dfd1;
+  padding:17px;
+  color:#245c4c;
+  font-size:.93rem;
+}
+.answer.visible {display:block;}
+.answer strong {
+  display:block;
+  margin-bottom:7px;
+}
+.document-caption {
+  color:var(--grey);
+  font-size:.82rem;
+  font-style:italic;
+  margin-top:-8px;
+}
+.self-check {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+  font-size:.84rem;
+}
+.self-check button {
+  border:1px solid #a5b5c4;
+  background:white;
+  padding:5px 10px;
+  border-radius:6px;
+  color:var(--navy);
+}
+.self-check button.selected {
+  background:var(--green);
+  color:white;
+  border-color:var(--green);
+}
+</style>
+
+<section class="section" id="activite2">
+
+  <div class="section-heading">
+    <div class="section-number">2</div>
+    <div>
+      <h2>La Seconde Guerre mondiale : un conflit aux dimensions nouvelles</h2>
+      <p>Étude de documents et compréhension des grandes étapes du conflit</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="small-label">Problématique</div>
+    <h3>Comment se déroulent les combats et en quoi s'agit-il d'un conflit aux dimensions nouvelles ?</h3>
+
+    <p class="intro">
+      Vous allez étudier deux cartes et une affiche de propagande
+      afin de comprendre l'extension géographique de la guerre,
+      les conquêtes de l'Axe et les grandes étapes de la victoire
+      des Alliés.
+    </p>
+
+    <div class="notice">
+      <strong>Consigne :</strong>
+      Observez attentivement les documents. Répondez aux cinq
+      questions en rédigeant des phrases complètes. Vous pourrez
+      ensuite afficher les éléments de correction pour vérifier
+      et compléter votre travail.
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="small-label">Documents historiques</div>
+    <h3>L'Europe et le monde dans la Seconde Guerre mondiale</h3>
+
+    <img
+      src="images/documents.jpg"
+      class="document-image"
+      alt="Carte de l'Europe, affiche japonaise de propagande et carte du conflit mondial"
+      onclick="window.open(this.src,'_blank')"
+    >
+
+    <p class="document-caption">
+      Documents de travail : l'Europe dans la première phase
+      du conflit, affiche japonaise de 1943 et carte du conflit mondial.
+      Cliquez sur l'image pour l'agrandir.
+    </p>
+  </div>
+
+  <div class="panel">
+    <div class="small-label">Questions d'analyse</div>
+    <h3>Répondez aux cinq questions</h3>
+
+    <div class="question-card" id="q1">
+      <div class="question-header">
+        <span class="question-number">1</span>
+        <div class="question-title">
+          Quelle action de l'Allemagne nazie déclenche le conflit en Europe ?
+        </div>
+      </div>
+      <div class="question-body">
+        <textarea id="answer1" placeholder="Rédigez votre réponse ici..."></textarea>
+        <div class="question-actions">
+          <button class="btn btn-primary" onclick="toggleAnswer(1)">
+            Afficher les éléments de correction
+          </button>
+        </div>
+      </div>
+      <div class="answer" id="correction1">
+        <strong>Éléments de correction</strong>
+        Le 1er septembre 1939, l'Allemagne nazie envahit la Pologne.
+        La France et le Royaume-Uni déclarent alors la guerre à
+        l'Allemagne le 3 septembre 1939.
+        <div class="self-check">
+          <span>Votre réponse était-elle complète ?</span>
+          <button onclick="selfEvaluate(1,true,this)">Oui</button>
+          <button onclick="selfEvaluate(1,false,this)">À compléter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q2">
+      <div class="question-header">
+        <span class="question-number">2</span>
+        <div class="question-title">
+          La première phase du conflit se déroule de 1939 à 1942.
+          Comment pouvez-vous décrire ce qui se passe pendant cette période d'après les cartes ?
+        </div>
+      </div>
+      <div class="question-body">
+        <textarea id="answer2" placeholder="Rédigez votre réponse ici..."></textarea>
+        <div class="question-actions">
+          <button class="btn btn-primary" onclick="toggleAnswer(2)">
+            Afficher les éléments de correction
+          </button>
+        </div>
+      </div>
+      <div class="answer" id="correction2">
+        <strong>Éléments de correction</strong>
+        Les forces de l'Axe, principalement l'Allemagne et l'Italie
+        en Europe et le Japon en Asie, remportent de nombreuses
+        victoires. Elles conquièrent une grande partie de l'Europe
+        et étendent leurs conquêtes en Asie et dans le Pacifique.
+
+        L'Allemagne occupe de nombreux territoires européens et
+        attaque l'URSS en 1941. En Asie, le Japon poursuit ses
+        conquêtes en Chine et en Asie du Sud-Est. Le Royaume-Uni
+        résiste en Europe occidentale.
+
+        Cette première phase est donc marquée par l'expansion
+        rapide des puissances de l'Axe.
+        <div class="self-check">
+          <span>Votre réponse était-elle complète ?</span>
+          <button onclick="selfEvaluate(2,true,this)">Oui</button>
+          <button onclick="selfEvaluate(2,false,this)">À compléter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q3">
+      <div class="question-header">
+        <span class="question-number">3</span>
+        <div class="question-title">
+          D'après l'affiche, quel est l'ennemi du régime japonais ?
+        </div>
+      </div>
+      <div class="question-body">
+        <textarea id="answer3" placeholder="Décrivez les éléments de l'affiche et expliquez leur signification..."></textarea>
+        <div class="question-actions">
+          <button class="btn btn-primary" onclick="toggleAnswer(3)">
+            Afficher les éléments de correction
+          </button>
+        </div>
+      </div>
+      <div class="answer" id="correction3">
+        <strong>Éléments de correction</strong>
+        L'affiche représente un soldat japonais qui brise des chaînes
+        portant les lettres de l'alphabet latin. Au sol, on distingue
+        des soldats vaincus portant notamment des uniformes occidentaux.
+
+        Le Japon présente donc les puissances occidentales, en
+        particulier les États-Unis et le Royaume-Uni, comme ses
+        ennemis. La propagande japonaise dénonce leur impérialisme
+        et justifie ainsi son projet de domination de l'Asie à travers
+        la sphère de coprospérité.
+        <div class="self-check">
+          <span>Votre réponse était-elle complète ?</span>
+          <button onclick="selfEvaluate(3,true,this)">Oui</button>
+          <button onclick="selfEvaluate(3,false,this)">À compléter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q4">
+      <div class="question-header">
+        <span class="question-number">4</span>
+        <div class="question-title">
+          En quoi peut-on dire que l'année 1942 marque un tournant dans la guerre ?
+        </div>
+      </div>
+      <div class="question-body">
+        <textarea id="answer4" placeholder="Rédigez votre réponse ici..."></textarea>
+        <div class="question-actions">
+          <button class="btn btn-primary" onclick="toggleAnswer(4)">
+            Afficher les éléments de correction
+          </button>
+        </div>
+      </div>
+      <div class="answer" id="correction4">
+        <strong>Éléments de correction</strong>
+        En 1942, les Alliés commencent à stopper l'expansion de l'Axe
+        et à reprendre l'initiative.
+
+        Dans le Pacifique, les États-Unis remportent la bataille de
+        Midway en juin 1942. En Afrique du Nord, les Britanniques
+        remportent la bataille d'El Alamein à l'automne 1942.
+        Le débarquement anglo-américain en Afrique du Nord,
+        le 8 novembre 1942, ouvre un nouveau front contre l'Axe.
+
+        Sur le front de l'Est, la bataille de Stalingrad commence
+        en 1942, mais la victoire soviétique intervient en février 1943.
+
+        L'année 1942 marque donc le début du recul des forces de l'Axe
+        et de la reconquête alliée.
+        <div class="self-check">
+          <span>Votre réponse était-elle complète ?</span>
+          <button onclick="selfEvaluate(4,true,this)">Oui</button>
+          <button onclick="selfEvaluate(4,false,this)">À compléter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="q5">
+      <div class="question-header">
+        <span class="question-number">5</span>
+        <div class="question-title">
+          Quels événements conduisent-ils à la capitulation des forces de l'Axe à partir de 1944 ?
+        </div>
+      </div>
+      <div class="question-body">
+        <textarea id="answer5" placeholder="Distinguez les événements en Europe et en Asie..."></textarea>
+        <div class="question-actions">
+          <button class="btn btn-primary" onclick="toggleAnswer(5)">
+            Afficher les éléments de correction
+          </button>
+        </div>
+      </div>
+      <div class="answer" id="correction5">
+        <strong>Éléments de correction</strong>
+
+        <p><strong>En Europe :</strong></p>
+        Les débarquements alliés en Normandie le 6 juin 1944,
+        puis en Provence le 15 août 1944, permettent la libération
+        progressive de la France. À l'Est, l'Armée rouge avance
+        vers l'Allemagne et prend Berlin. L'Allemagne nazie capitule
+        le 8 mai 1945.
+
+        <p><strong>En Asie :</strong></p>
+        Les États-Unis progressent dans le Pacifique. Les bombardements
+        atomiques d'Hiroshima le 6 août 1945 et de Nagasaki le
+        9 août 1945 précipitent la capitulation japonaise,
+        officiellement signée le 2 septembre 1945.
+        <div class="self-check">
+          <span>Votre réponse était-elle complète ?</span>
+          <button onclick="selfEvaluate(5,true,this)">Oui</button>
+          <button onclick="selfEvaluate(5,false,this)">À compléter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice">
+      <strong>Pour réussir cette activité :</strong>
+      vos réponses doivent montrer que vous avez compris
+      l'extension géographique de la guerre, le rôle des Alliés
+      et le basculement progressif du rapport de force.
+    </div>
+
+    <div class="button-row">
+      <button class="btn btn-success" onclick="showAllAnswers()">
+        Afficher toutes les corrections
+      </button>
+      <button class="btn btn-secondary" onclick="hideAllAnswers()">
+        Masquer les corrections
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.bilan-block {
+  background:white;
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:19px;
+  margin:15px 0;
+}
+.bilan-block h3 {
+  margin-top:0;
+  border-bottom:1px solid var(--border);
+  padding-bottom:9px;
+}
+.bilan-block h4 {
+  color:var(--navy);
+  margin-top:22px;
+}
+.bilan-block li {margin:7px 0;}
+.date {
+  color:var(--blue);
+  font-weight:bold;
+}
+.bilan-note {
+  background:#edf3f9;
+  padding:15px;
+  border-radius:8px;
+  margin:15px 0;
+}
+.copy-check {
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  margin-top:20px;
+  padding:15px;
+  background:var(--green-light);
+  border-radius:8px;
+  color:#17674f;
+  font-weight:bold;
+}
+.copy-check input {
+  margin-top:6px;
+  width:18px;
+  height:18px;
+}
+</style>
+
+<section class="section" id="bilan">
+
+  <div class="section-heading">
+    <div class="section-number">3</div>
+    <div>
+      <h2>Le bilan à retenir</h2>
+      <p>À recopier dans votre cahier</p>
+    </div>
+  </div>
+
+  <div class="panel">
+
+    <div class="notice">
+      <strong>Travail à effectuer :</strong>
+      Lisez attentivement le bilan suivant et recopiez-le
+      dans votre cahier. Les dates et les notions importantes
+      doivent être particulièrement bien mémorisées.
+    </div>
+
+    <div class="bilan-block">
+
+      <h3>II – La Seconde Guerre mondiale (1939-1945)</h3>
+
+      <p>
+        Née de la montée de régimes totalitaires expansionnistes
+        et militaristes, la Seconde Guerre mondiale commence en
+        <strong>1937 en Asie</strong> et en
+        <strong>1939 en Europe</strong>. Avec l'entrée en guerre
+        de l'URSS, puis des États-Unis, la guerre s'étend au monde
+        entier. Les pays belligérants mobilisent des troupes et
+        des moyens technologiques sans précédent. Les violences
+        extrêmes exercées contre les civils, notamment dans le
+        cadre de la politique génocidaire nazie, font de ce conflit
+        une guerre d'anéantissement inédite.
+      </p>
+
+      <h3>A – Un conflit militaire aux dimensions nouvelles</h3>
+
+      <h4>1. La première phase de la guerre : les victoires de l'Axe (1939-1942)</h4>
+
+      <p>
+        Hitler dote le IIIe Reich d'une armée puissante et se lance
+        dans une politique d'expansion pour conquérir
+        <strong>« l'espace vital »</strong> de l'Allemagne,
+        persuadé de l'inaction des démocraties occidentales
+        paralysées par le pacifisme.
+      </p>
+
+      <p>
+        Le <span class="date">1er septembre 1939</span>,
+        l'invasion de la Pologne par l'Allemagne marque l'entrée
+        en guerre de la France et du Royaume-Uni.
+      </p>
+
+      <p>
+        Entre 1939 et 1942, les forces de l'Axe conquièrent
+        rapidement une grande partie de l'Europe grâce à la
+        stratégie de la <strong>Blitzkrieg</strong>, ou
+        guerre-éclair, qui combine l'usage des blindés et de
+        l'aviation pour percer les lignes ennemies.
+      </p>
+
+      <p>
+        En juin 1941, Hitler rompt le pacte de non-agression
+        signé avec l'URSS et lance l'opération Barbarossa.
+        L'Allemagne envahit alors l'Union soviétique.
+        En Europe occidentale, seul le Royaume-Uni résiste
+        à l'Allemagne. La guerre s'étend ainsi à l'Atlantique,
+        à la Méditerranée et à l'Afrique.
+      </p>
+
+      <p>
+        En Asie, le Japon met en place à partir des années 1930
+        une sphère de <strong>« coprospérité »</strong>.
+        Il se rapproche de l'Allemagne, avec laquelle il signe
+        le <strong>pacte anti-Komintern</strong>. À partir de
+        1937, le Japon attaque la Chine et envahit son territoire.
+      </p>
+
+      <p>
+        Le <span class="date">7 décembre 1941</span>, le Japon
+        attaque la base navale américaine de Pearl Harbor.
+        Cette attaque provoque l'entrée en guerre des États-Unis.
+      </p>
+
+      <h4>2. À partir de 1942 : le retournement de la guerre</h4>
+
+      <p>
+        À partir de 1942, les Alliés commencent à repousser
+        les forces de l'Axe. Ils s'associent dans une
+        <strong>« Grande Alliance »</strong> contre les puissances
+        de l'Axe.
+      </p>
+
+      <p>
+        Dans le Pacifique, la victoire américaine de
+        <strong>Midway en juin 1942</strong> constitue un tournant
+        majeur. En Afrique du Nord, la victoire britannique
+        d'El Alamein et le débarquement anglo-américain du
+        <strong>8 novembre 1942</strong> accélèrent le recul de l'Axe.
+      </p>
+
+      <p>
+        Sur le front de l'Est, la bataille de Stalingrad,
+        commencée en 1942, se termine par une victoire soviétique
+        en <strong>février 1943</strong>. Elle marque un tournant
+        majeur dans la guerre en Europe.
+      </p>
+
+      <h4>3. 1944-1945 : la défaite des puissances de l'Axe</h4>
+
+      <p>
+        En 1944 et 1945, le Reich est pris en tenaille par les
+        débarquements alliés à l'Ouest et l'avancée soviétique
+        à l'Est.
+      </p>
+
+      <p>
+        Les Alliés débarquent en Normandie les
+        <strong>5 et 6 juin 1944</strong>, puis en Provence le
+        <strong>15 août 1944</strong>. Ces opérations permettent
+        la libération progressive de la France.
+      </p>
+
+      <p>
+        À l'Est, les troupes soviétiques progressent jusqu'à Berlin.
+        Le Reich capitule le <strong>8 mai 1945</strong>.
+      </p>
+
+      <p>
+        Dans le Pacifique, les États-Unis poursuivent la reconquête
+        des territoires occupés par le Japon. Les bombes atomiques
+        sont larguées sur <strong>Hiroshima le 6 août 1945</strong>
+        et sur <strong>Nagasaki le 9 août 1945</strong>.
+        Le Japon capitule officiellement le
+        <strong>2 septembre 1945</strong>.
+      </p>
+
+    </div>
+
+    <div class="bilan-block">
+      <h3>Notions à connaître</h3>
+
+      <div class="definition">
+        <strong>Blitzkrieg ou « guerre-éclair » :</strong>
+        stratégie militaire qui combine l'usage des blindés
+        et de l'aviation pour percer rapidement les lignes ennemies.
+      </div>
+
+      <div class="definition">
+        <strong>Pacte anti-Komintern :</strong>
+        accord signé en 1936 entre l'Allemagne nazie et le Japon,
+        dirigé contre l'Internationale communiste fondée par Lénine
+        en 1919. L'Italie rejoint le pacte en 1937.
+      </div>
+
+      <div class="definition">
+        <strong>Sphère de coprospérité :</strong>
+        projet japonais de construction d'une grande région
+        asiatique dominée par le Japon, présenté comme un moyen
+        de libérer l'Asie de la domination occidentale.
+        En réalité, il justifie l'expansion et la domination
+        impérialiste japonaises.
+      </div>
+
+      <div class="definition">
+        <strong>Forces de l'Axe :</strong>
+        principalement l'Allemagne nazie, l'Italie fasciste
+        et le Japon.
+      </div>
+
+      <div class="definition">
+        <strong>Alliés :</strong>
+        notamment le Royaume-Uni, l'URSS, les États-Unis
+        et la France libre.
+      </div>
+    </div>
+
+    <div class="bilan-note">
+      <strong>Dates essentielles à mémoriser</strong>
+      <ul>
+        <li>1937 : début de la guerre en Asie.</li>
+        <li>1er septembre 1939 : invasion de la Pologne.</li>
+        <li>7 décembre 1941 : attaque de Pearl Harbor.</li>
+        <li>1942 : début du retournement de la guerre.</li>
+        <li>Février 1943 : victoire soviétique à Stalingrad.</li>
+        <li>6 juin 1944 : débarquement de Normandie.</li>
+        <li>15 août 1944 : débarquement de Provence.</li>
+        <li>8 mai 1945 : capitulation de l'Allemagne.</li>
+        <li>6 et 9 août 1945 : Hiroshima et Nagasaki.</li>
+        <li>2 septembre 1945 : capitulation du Japon.</li>
+      </ul>
+    </div>
+
+    <label class="copy-check">
+      <input type="checkbox" id="copyDone" onchange="updateProgress()">
+      <span>J'ai terminé de recopier le bilan dans mon cahier.</span>
+    </label>
+
+  </div>
+</section>
+
+
+
+<script>
+
+// ==========================================
+// SUIVI DE LA PROGRESSION
+// ==========================================
+
+let mindCompleted = false;
+let mindCorrectionSeen = false;
+let selfResults = {};
+
+function updateProgress() {
+
+  const mindPart = mindCompleted ? 1 : 0;
+
+  const questionsPart =
+    Object.keys(selfResults).length / 5;
+
+  const copyPart =
+    document.getElementById("copyDone").checked ? 1 : 0;
+
+  const total =
+    Math.round(((mindPart + questionsPart + copyPart) / 3) * 100);
+
+  document.getElementById("progressBar").style.width =
+    total + "%";
+
+  document.getElementById("progressText").textContent =
+    total + " %";
+
+  saveProgress();
+}
+
+// ==========================================
+// CARTE MENTALE
+// ==========================================
+
+function checkMind() {
+
+  const cards = document.querySelectorAll(".mind-card");
+
+  let correct = 0;
+  let unanswered = 0;
+
+  cards.forEach(card => {
+
+    const select = card.querySelector("select");
+    const expected = card.dataset.answer;
+    const selected = select.value;
+
+    card.classList.remove("correct", "incorrect");
+
+    if (!selected) {
+      unanswered++;
+      card.classList.add("incorrect");
+      return;
+    }
+
+    if (selected === expected) {
+      correct++;
+      card.classList.add("correct");
+    } else {
+      card.classList.add("incorrect");
+    }
+  });
+
+  const feedback = document.getElementById("mindFeedback");
+
+  feedback.className = "feedback show";
+
+  if (unanswered > 0) {
+
+    feedback.classList.add("bad");
+
+    feedback.innerHTML =
+      "<strong>Il reste " + unanswered +
+      " proposition(s) à classer.</strong><br>" +
+      "Complétez toutes les propositions avant de valider.";
+
+    mindCompleted = false;
+
+  } else {
+
+ mindCompleted = (correct === cards.length);
+
+    if (correct === cards.length) {
+
+      feedback.classList.add("good");
+
+      feedback.innerHTML =
+        "<strong>Excellent ! " + correct +
+        " bonnes réponses sur " + cards.length +
+        ".</strong><br>" +
+        "Vous avez correctement identifié les caractéristiques " +
+        "communes et les différences entre les deux régimes.";
+
+    } else {
+
+      feedback.classList.add("bad");
+
+      feedback.innerHTML =
+        "<strong>" + correct + " bonnes réponses sur " +
+        cards.length + ".</strong><br>" +
+        "Les réponses incorrectes sont signalées en rouge. " +
+        "Vous pouvez modifier vos choix et vérifier à nouveau.";
+    }
+  }
+
+  updateProgress();
+}
+
+function resetMind() {
+
+  const cards = document.querySelectorAll(".mind-card");
+
+  cards.forEach(card => {
+
+    card.querySelector("select").value = "";
+
+    card.classList.remove("correct", "incorrect");
+  });
+
+  const feedback = document.getElementById("mindFeedback");
+
+  feedback.className = "feedback";
+  feedback.innerHTML = "";
+
+  document.getElementById("mindCorrection").hidden = true;
+
+  mindCompleted = false;
+  mindCorrectionSeen = false;
+
+  updateProgress();
+}
+
+function showMindCorrection() {
+
+  const correction = document.getElementById("mindCorrection");
+
+  correction.hidden = !correction.hidden;
+
+  mindCorrectionSeen = !correction.hidden;
+
+  if (!correction.hidden) {
+    correction.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest"
+    });
+  }
+}
+
+// ==========================================
+// QUESTIONS ET CORRECTIONS
+// ==========================================
+
+function toggleAnswer(number) {
+
+  const answer = document.getElementById("correction" + number);
+
+  answer.classList.toggle("visible");
+
+  const button = document.querySelector(
+    "#q" + number + " .question-actions button"
+  );
+
+  if (answer.classList.contains("visible")) {
+
+    button.textContent = "Masquer les éléments de correction";
+
+  } else {
+
+    button.textContent = "Afficher les éléments de correction";
+  }
+}
+
+function showAllAnswers() {
+
+  for (let i = 1; i <= 5; i++) {
+
+    const answer = document.getElementById("correction" + i);
+
+    answer.classList.add("visible");
+
+    const button = document.querySelector(
+      "#q" + i + " .question-actions button"
+    );
+
+    button.textContent = "Masquer les éléments de correction";
+  }
+}
+
+function hideAllAnswers() {
+
+  for (let i = 1; i <= 5; i++) {
+
+    const answer = document.getElementById("correction" + i);
+
+    answer.classList.remove("visible");
+
+    const button = document.querySelector(
+      "#q" + i + " .question-actions button"
+    );
+
+    button.textContent = "Afficher les éléments de correction";
+  }
+}
+
+// ==========================================
+// AUTOÉVALUATION
+// ==========================================
+
+function selfEvaluate(number, success, button) {
+
+  const parent = button.parentElement;
+
+  parent.querySelectorAll("button").forEach(btn => {
+
+    btn.classList.remove("selected");
+
+  });
+
+  button.classList.add("selected");
+
+  selfResults[number] = success;
+
+  const oldMessage = parent.querySelector(".evaluation-message");
+
+  if (oldMessage) {
+    oldMessage.remove();
+  }
+
+  const message = document.createElement("span");
+
+  message.className = "evaluation-message";
+
+  if (success) {
+
+    message.textContent = "Réponse maîtrisée ✓";
+    message.style.color = "#17674f";
+
+  } else {
+
+    message.textContent = "À reprendre dans votre cahier";
+    message.style.color = "#895021";
+  }
+
+  parent.appendChild(message);
+
+  updateProgress();
+}
+
+// ==========================================
+// SAUVEGARDE LOCALE DE L'AVANCEMENT
+// ==========================================
+
+function saveProgress() {
+
+  try {
+
+    const data = {
+
+      mindCompleted: mindCompleted,
+
+      mindValues: Array.from(
+        document.querySelectorAll(".mind-card select")
+      ).map(select => select.value),
+
+      selfResults: selfResults,
+
+      copyDone: document.getElementById("copyDone").checked,
+
+      answers: [1,2,3,4,5].map(i =>
+        document.getElementById("answer" + i).value
+      )
+
+    };
+
+    localStorage.setItem(
+      "histoireSti2dProgress",
+      JSON.stringify(data)
+    );
+
+  } catch (error) {
+
+    console.log("Sauvegarde locale indisponible.");
+
+  }
+}
+
+function loadProgress() {
+
+  try {
+
+    const saved = localStorage.getItem(
+      "histoireSti2dProgress"
+    );
+
+    if (!saved) return;
+
+    const data = JSON.parse(saved);
+
+    if (data.mindValues) {
+
+      document.querySelectorAll(".mind-card select")
+        .forEach((select, index) => {
+
+          select.value = data.mindValues[index] || "";
+
+        });
+    }
+
+    if (data.answers) {
+
+      data.answers.forEach((answer, index) => {
+
+        document.getElementById(
+          "answer" + (index + 1)
+        ).value = answer || "";
+
+      });
+    }
+
+    selfResults = data.selfResults || {};
+
+    Object.keys(selfResults).forEach(number => {
+
+      const question = document.getElementById("q" + number);
+
+      if (!question) return;
+
+      const buttons = question.querySelectorAll(
+        ".self-check button"
+      );
+
+      const selectedButton = selfResults[number]
+        ? buttons[0]
+        : buttons[1];
+
+      selectedButton.classList.add("selected");
+
+      const message = document.createElement("span");
+
+      message.className = "evaluation-message";
+
+      message.textContent = selfResults[number]
+        ? "Réponse maîtrisée ✓"
+        : "À reprendre dans votre cahier";
+
+      message.style.color = selfResults[number]
+        ? "#17674f"
+        : "#895021";
+
+      selectedButton.parentElement.appendChild(message);
+
+    });
+
+    document.getElementById("copyDone").checked =
+      data.copyDone || false;
+
+    mindCompleted = data.mindCompleted || false;
+
+    // Les réponses de la carte sont restaurées,
+    // mais une nouvelle vérification est nécessaire.
+
+    mindCompleted = false;
+
+    updateProgress();
+
+  } catch (error) {
+
+    console.log("Impossible de récupérer la sauvegarde.");
+
+  }
+}
+
+// ==========================================
+// SAUVEGARDE AUTOMATIQUE DES RÉPONSES
+// ==========================================
+
+document.querySelectorAll("textarea").forEach(textarea => {
+
+  textarea.addEventListener("input", saveProgress);
+
+});
+
+document.querySelectorAll(".mind-card select").forEach(select => {
+
+  select.addEventListener("change", () => {
+
+    mindCompleted = false;
+
+    document.querySelectorAll(".mind-card").forEach(card => {
+
+      card.classList.remove("correct", "incorrect");
+
+    });
+
+    document.getElementById("mindFeedback").className =
+      "feedback";
+
+    updateProgress();
+
+  });
+
+});
+
+// ==========================================
+// INITIALISATION
+// ==========================================
+
+loadProgress();
+
+updateProgress();
+
+</script>
+
+</body>
+</html>
